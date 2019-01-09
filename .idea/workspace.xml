@@ -1,130 +1,177 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e30f7eb3-5f10-4398-bafb-6784be4295cd" name="Default Changelist" comment="" />
+    <list default="true" id="e30f7eb3-5f10-4398-bafb-6784be4295cd" name="Default Changelist" comment="added:&#10;&#10;-composer&#10;-Logger&#10;-ORM sagrishin/lightweight-php-orm&#10;-Migration Class Agent to MySQL Table&#10;-Persistence AgentTable for Agent (method:construct,load,save)">
+      <change beforePath="$PROJECT_DIR$/.idea/ Electricity.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ Electricity.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Agent/Agent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Agent/AgentInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Calculations/Calculation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Calculations/CalculationInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Document/Document.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Period/Period.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Period/PeriodInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Tariffs/Tariff.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Tariffs/TariffInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/Agent/Agent.php">
+        <entry file="file://$PROJECT_DIR$/app/Electricity/Model/Calculations/Calculation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+            <state relative-caret-position="1620">
+              <caret line="113" column="31" selection-start-line="110" selection-start-column="4" selection-end-line="113" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/Period/Period.php">
+        <entry file="file://$PROJECT_DIR$/app/Electricity/Services/Logger.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Electricity/Model/Document/Document.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1815">
+              <caret line="126" column="24" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Electricity/Database.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/Calculations/Calculation.php">
+        <entry file="file://$PROJECT_DIR$/vendor/sagrishin/lightweight-php-orm/lib/orm/DataBase/Table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="97" column="5" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+            <state relative-caret-position="855">
+              <caret line="64" column="9" selection-start-line="55" selection-start-column="8" selection-end-line="64" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Autoloader.php">
+        <entry file="file://$PROJECT_DIR$/app/Electricity/Model/Calculations/CalculationInterface.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+            <state relative-caret-position="825">
+              <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/Document/Document.php">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="77" column="34" lean-forward="true" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/Calculations/CalculationInterface.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+            <state relative-caret-position="209">
+              <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.php">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/Period/PeriodInterface.php">
+        <entry file="file://$PROJECT_DIR$/app/Electricity/Model/Agent/Persistence/AgentTable.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+            <state relative-caret-position="181">
+              <caret line="54" column="10" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
+              <folding>
+                <element signature="e#122#153#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/Tariffs/Tariff.php">
+        <entry file="file://$PROJECT_DIR$/Migrate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/Tariffs/TariffInterface.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+            <state relative-caret-position="255">
+              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="alex" />
+      </list>
+    </option>
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Autoloader.php" />
+        <option value="$PROJECT_DIR$/Model/Agent/Agent.php" />
         <option value="$PROJECT_DIR$/Model/Agent/AgentInterface.php" />
+        <option value="$PROJECT_DIR$/Model/Calculations/CalculationInterface.php" />
+        <option value="$PROJECT_DIR$/Model/Calculations/Calculation.php" />
+        <option value="$PROJECT_DIR$/Model/Document/Document.php" />
+        <option value="$PROJECT_DIR$/Model/Period/Period.php" />
         <option value="$PROJECT_DIR$/Model/Period/PeriodInterface.php" />
         <option value="$PROJECT_DIR$/Model/Tariffs/Tariff.php" />
         <option value="$PROJECT_DIR$/Model/Tariffs/TariffInterface.php" />
-        <option value="$PROJECT_DIR$/Model/Agent/Agent.php" />
-        <option value="$PROJECT_DIR$/Model/Calculations/CalculationInterface.php" />
-        <option value="$PROJECT_DIR$/Autoloader.php" />
-        <option value="$PROJECT_DIR$/Model/Period/Period.php" />
-        <option value="$PROJECT_DIR$/Model/Document/Document.php" />
-        <option value="$PROJECT_DIR$/Model/Calculations/Calculation.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/Electricity/Database.php" />
+        <option value="$PROJECT_DIR$/vendor/sagrishin/lightweight-php-orm/lib/orm/DataBase/Table.php" />
+        <option value="$PROJECT_DIR$/app/Electricity/Model/Agent/AgentInterface.php" />
+        <option value="$PROJECT_DIR$/app/Electricity/Services/Logger.php" />
+        <option value="$PROJECT_DIR$/app/Electricity/Model/Calculations/CalculationInterface.php" />
+        <option value="$PROJECT_DIR$/Migrate.php" />
+        <option value="$PROJECT_DIR$/app/Electricity/Model/Agent/Agent.php" />
+        <option value="$PROJECT_DIR$/app/Electricity/Model/Agent/Persistence/AgentTable.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="5">
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/sagrishin/lightweight-php-orm" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/katzgrau/klogger" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="4">
     <option name="x" value="716" />
     <option name="y" value="27" />
     <option name="width" value="640" />
     <option name="height" value="741" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -140,7 +187,18 @@
             <path>
               <item name="electricity" type="b2602c69:ProjectViewProjectNode" />
               <item name="electricity" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="electricity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="electricity" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Electricity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="electricity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="electricity" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -153,7 +211,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="sshConsole" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Electricity" />
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -178,19 +243,22 @@
       <option name="presentableId" value="Default" />
       <updated>1546634460408</updated>
       <workItem from="1546634461871" duration="10918000" />
-      <workItem from="1546659121502" duration="2647000" />
+      <workItem from="1546659121502" duration="3331000" />
+      <workItem from="1546956051871" duration="14194000" />
+      <workItem from="1547040480295" duration="6300000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13565000" />
+    <option name="totallyTimeSpent" value="34743000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="716" y="27" width="640" height="741" extended-state="4" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34848484" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36195287" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" sideWeight="0.4983165" weight="0.32843137" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -200,9 +268,9 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.56060606" weight="0.32843137" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.5286195" visible="true" weight="0.33006537" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.47138047" side_tool="true" weight="0.33006537" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -212,81 +280,159 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added:&#10;&#10;-composer&#10;-Logger&#10;-ORM sagrishin/lightweight-php-orm&#10;-Migration Class Agent to MySQL Table&#10;-Persistence AgentTable for Agent (method:construct,load,save)" />
+    <option name="LAST_COMMIT_MESSAGE" value="added:&#10;&#10;-composer&#10;-Logger&#10;-ORM sagrishin/lightweight-php-orm&#10;-Migration Class Agent to MySQL Table&#10;-Persistence AgentTable for Agent (method:construct,load,save)" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Model/Agent/AgentInterface.php">
+    <entry file="file://$PROJECT_DIR$/app/Electricity/Model/Tariffs/TariffInterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        <state relative-caret-position="75">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Agent/Agent.php">
+    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_namespaces.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Electricity/Model/Tariffs/Tariff.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        <state relative-caret-position="382">
+          <caret line="63" column="24" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Period/Period.php">
+    <entry file="file://$PROJECT_DIR$/app/Electricity/Model/Period/PeriodInterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+        <state relative-caret-position="390">
+          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Autoloader.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="295">
           <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Calculations/CalculationInterface.php">
+    <entry file="file://$PROJECT_DIR$/app/Electricity/Model/Period/Period.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        <state relative-caret-position="435">
+          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Period/PeriodInterface.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        <state relative-caret-position="210">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Tariffs/TariffInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_classmap.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sagrishin/lightweight-php-orm/lib/orm/DataBase/AbstractDataBase.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sagrishin/lightweight-php-orm/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="165">
+            <caret line="32" column="14" selection-start-line="28" selection-start-column="4" selection-end-line="35" selection-end-column="5" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Document/Document.php">
+    <entry file="file://$PROJECT_DIR$/app/Electricity/Model/Agent/AgentInterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="77" column="34" lean-forward="true" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
+        <state relative-caret-position="195">
+          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Calculations/Calculation.php">
+    <entry file="file://$PROJECT_DIR$/app/Electricity/Model/Agent/Agent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="97" column="5" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+        <state relative-caret-position="1215">
+          <caret line="86" column="25" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Tariffs/Tariff.php">
+    <entry file="file://$PROJECT_DIR$/app/Electricity/Model/Calculations/Calculation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        <state relative-caret-position="1620">
+          <caret line="113" column="31" selection-start-line="110" selection-start-column="4" selection-end-line="113" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Electricity/Services/Logger.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Electricity/Model/Document/Document.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1815">
+          <caret line="126" column="24" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Electricity/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sagrishin/lightweight-php-orm/lib/orm/DataBase/Table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="64" column="9" selection-start-line="55" selection-start-column="8" selection-end-line="64" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Electricity/Model/Calculations/CalculationInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Migrate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Electricity/Model/Agent/Persistence/AgentTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="54" column="10" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
+          <folding>
+            <element signature="e#122#153#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="209">
+          <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>

@@ -11,16 +11,27 @@ namespace Model\Period;
 
 class Period implements PeriodInterface
 {
+    /**
+     * @var int
+     */
     private $month;
+    /**
+     * @var int
+     */
     private $year;
 
+    /**
+     * Period constructor.
+     * @param $month
+     * @param $year
+     */
     public function __construct($month,$year)
     {
         $this->setMonth($month);
         $this->setYear($year);}
 
     /**
-     * @return mixed
+     * @return int
      */
     public function getMonth()
     {
@@ -28,7 +39,7 @@ class Period implements PeriodInterface
     }
 
     /**
-     * @param mixed $month
+     * @param int $month
      */
     public function setMonth($month)
     {
@@ -36,7 +47,7 @@ class Period implements PeriodInterface
     }
 
     /**
-     * @return mixed
+     * @return int
      */
     public function getYear()
     {
@@ -44,7 +55,7 @@ class Period implements PeriodInterface
     }
 
     /**
-     * @param mixed $year
+     * @param int $year
      */
     public function setYear($year)
     {

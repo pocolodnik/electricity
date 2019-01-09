@@ -10,9 +10,18 @@ namespace Model\Tariffs;
 
 interface TariffInterface
 {
+    /**
+     * @return float|int
+     */
     public function getPrice1();
 
+    /**
+     * @return float|int
+     */
     public function getPrice2();
 
+    /**
+     * @return float|int
+     */
     public function getPrice3();
 }

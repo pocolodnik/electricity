@@ -11,22 +11,22 @@ namespace Model\Period;
 interface PeriodInterface
 {
     /**
-     * @return mixed
+     * @return int
      */
     public function getMonth();
 
     /**
-     * @param mixed $month
+     * @param int $month
      */
     public function setMonth($month);
 
     /**
-     * @return mixed
+     * @return int
      */
     public function getYear();
 
     /**
-     * @param mixed $year
+     * @param int $year
      */
     public function setYear($year);
 }

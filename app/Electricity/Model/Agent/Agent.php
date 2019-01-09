@@ -9,11 +9,26 @@
 namespace Model\Agent;
 
 
+use Model\Agent\Persistence\AgentTable;
+
 class Agent implements AgentInterface
 {
+    /**
+     * @var int
+     */
     private $id;
+    /**
+     * @var string
+     */
     private $name;
+    /**
+     * @var string
+     */
     private $status;
+    /**
+     * @var AgentTable
+     */
+    private $persistance = null;
 
     public function __construct($name)
     {
@@ -21,7 +36,7 @@ class Agent implements AgentInterface
     }
 
     /**
-     * @return mixed
+     * @return integer
      */
     public function getId()
     {
@@ -29,7 +44,7 @@ class Agent implements AgentInterface
     }
 
     /**
-     * @param mixed $id
+     * @param integer $id
      */
     public function setId($id)
     {
@@ -37,7 +52,7 @@ class Agent implements AgentInterface
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getName()
     {
@@ -45,7 +60,7 @@ class Agent implements AgentInterface
     }
 
     /**
-     * @param mixed $name
+     * @param string $name
      */
     public function setName($name)
     {
@@ -53,7 +68,7 @@ class Agent implements AgentInterface
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getStatus()
     {
@@ -61,11 +76,23 @@ class Agent implements AgentInterface
     }
 
     /**
-     * @param mixed $status
+     * @param string $status
      */
     public function setStatus($status)
     {
         $this->status = $status;
+    }
+
+    /**
+     * @return AgentTable
+     */
+    public function getPersistence()
+    {
+        if ($this->persistance === null){
+            $this->persistance = new AgentTable();
+            $this->persistance->setModel($this);
+        }
+        return $this->persistance;
     }
 
 }

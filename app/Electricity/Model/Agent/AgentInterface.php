@@ -11,11 +11,34 @@ namespace Model\Agent;
 
 interface AgentInterface
 {
+    /**
+     * @return int
+     */
     public function getId();
+
+    /**
+     * @param int $id
+     */
     public function setId($id);
+
+    /**
+     * @return string
+     */
     public function getName();
+
+    /**
+     * @param string $name
+     */
     public function setName($name);
+
+    /**
+     * @return string
+     */
     public function getStatus();
+
+    /**
+     * @param string $status
+     */
     public function setStatus($status);
 
 

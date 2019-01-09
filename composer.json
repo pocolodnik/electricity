@@ -1,0 +1,19 @@
+{
+    "name": "alex/electricity",
+    "description": "Application calculation of electricity consumption",
+    "license": "free",
+    "authors": [
+        {
+            "name": "Pocolodnik",
+            "email": "banul.sx@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"Electricity\\" : "app/"},
+        "classmap" : ["app/"]
+    },
+    "require": {
+        "katzgrau/klogger": "dev-master",
+        "sagrishin/lightweight-php-orm": "^1.3"
+    }
+}
