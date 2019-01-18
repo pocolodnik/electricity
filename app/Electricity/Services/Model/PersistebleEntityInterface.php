@@ -11,5 +11,8 @@ namespace Electricity\Services\Model;
 
 interface PersistebleEntityInterface
 {
-
+    /**
+     * @return \Electricity\Services\Persistence\Resource
+     */
+    public function getPersistence();
 }

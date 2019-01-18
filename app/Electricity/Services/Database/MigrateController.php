@@ -1,8 +1,8 @@
 <?php
 
-namespace Shop\Services\Database;
+namespace Electricity\Services\Database;
 
-use Shop\Services\ControllerInterface;
+use Electricity\Services\ControllerInterface;
 
 class MigrateController implements ControllerInterface
 {
@@ -12,7 +12,7 @@ class MigrateController implements ControllerInterface
         if (!is_null($modelClassName)) {
 
             if (class_exists($modelClassName)) {
-                $model = new $_GET['model']();
+                $model = \Electricity\Services\DiContainer::getInstance()->make($modelClassName);
 
                 if ($model->getPersistence()->migrate()) {
                     return 'Success';
@@ -20,6 +20,6 @@ class MigrateController implements ControllerInterface
             }
         }
 
-        return "please specify correct model class name, for example: ?model=\Shop\Customer\Customer";
+        return "please specify correct model class name, for example: ?model=Shop\Customer\Customer";
     }
 }

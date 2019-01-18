@@ -6,7 +6,7 @@
  * Time: 18:30
  */
 
-namespace Services\Logger;
+namespace Electricity\Services;
 
 
 class Logger

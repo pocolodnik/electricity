@@ -6,7 +6,7 @@
  * Time: 3:44
  */
 
-namespace Model\Tariffs;
+namespace Electricity\Model\Tariffs;
 
 interface TariffInterface
 {

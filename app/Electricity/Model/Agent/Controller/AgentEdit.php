@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: alex
- * Date: 16.01.19
- * Time: 21:06
+ * Date: 18.01.19
+ * Time: 2:26
  */
 
 namespace Electricity\Model\Agent\Controller;
@@ -12,7 +12,7 @@ namespace Electricity\Model\Agent\Controller;
 use Electricity\Model\Agent\Agent;
 use Electricity\Services\ControllerInterface;
 
-class AgentControllerNew implements ControllerInterface
+class AgentEdit implements ControllerInterface
 {
     /**
      * @var Agent
@@ -47,9 +47,16 @@ class AgentControllerNew implements ControllerInterface
     public function execute($request, $response)
     {
         try {
-            $twig = \Electricity\Services\DiContainer::getInstance()->make("Electricity\Services\TwigTemplate");
-            return $twig->render('AgentNew.html',[]);
+            $this->agent->getPersistence()->load($request->id);
 
+
+            $twig = \Electricity\Services\DiContainer::getInstance()->make("Electricity\Services\TwigTemplate");
+            return $twig->render('AgentsEdit.html',['agent' => $this->agent]);
+
+
+//            return print_r($this->agent, true);
+        } catch (NotFoundException $e) {
+            return "Sorry, the product not found";
         } catch (\Electricity\Services\SystemException $e) {
 
             $this->logger->debug(

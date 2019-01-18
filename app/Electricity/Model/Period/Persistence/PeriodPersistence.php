@@ -6,15 +6,15 @@
  * Time: 3:28
  */
 
-namespace Electricity\Model\Calculations\Persistence;
+namespace Electricity\Model\Period\Persistence;
 
 
-class DocumentPersistence extends \Electricity\Services\Persistence\Resource
+class PeriodPersistence extends \Electricity\Services\Persistence\Resource
 {
     /**
      * @var string
      */
-    protected $table_name = "Documents";
+    protected $table_name = "Periods";
 
 //    protected function getDataForSave()
 //    {

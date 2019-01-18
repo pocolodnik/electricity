@@ -18,6 +18,6 @@ include_once __DIR__ . "/vendor/autoload.php";
 
 $db = new \Electricity\Database();
 
-$agentTable = new \Model\Agent\Persistence\AgentTable();
+$agentTable = new \Electricity\Model\Agent\Persistence\AgentTable();
 
 $agentTable->migrate();

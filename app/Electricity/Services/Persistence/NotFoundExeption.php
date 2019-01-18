@@ -9,7 +9,7 @@
 namespace Electricity\Services\Persistence;
 
 
-class NotFoundExeption
+class NotFoundExeption extends \Exception
 {
 
 }

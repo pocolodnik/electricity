@@ -11,8 +11,9 @@ namespace Electricity\Model\Agent\Controller;
 
 use Electricity\Model\Agent\Agent;
 use Electricity\Services\ControllerInterface;
+use Electricity\Services\TwigTemplate;
 
-class AgentView implements ControllerInterface
+class AgentViewCollection implements ControllerInterface
 {
     /**
      * @var Agent
@@ -47,8 +48,11 @@ class AgentView implements ControllerInterface
     public function execute($request, $response)
     {
         try {
-            $this->agent->getPersistence()->load($request->id);
-            return print_r($this->agent, true);
+            $agents = $this->agent->getPersistence()->getCollection();
+//            $twig = TwigTemplate::getTemplate();
+            $twig = \Electricity\Services\DiContainer::getInstance()->make("Electricity\Services\TwigTemplate");
+            return $twig->render('AgentsView.html',['agents' => $agents]);
+            //return print_r($collection, true);
         } catch (NotFoundException $e) {
             return "Sorry, the product not found";
         } catch (\Electricity\Services\SystemException $e) {

@@ -6,7 +6,7 @@
  * Time: 3:17
  */
 
-namespace Model\Period;
+namespace Electricity\Model\Period;
 
 interface PeriodInterface
 {

@@ -6,39 +6,81 @@
  * Time: 4:00
  */
 
-namespace Model\Calculations;
+namespace Electricity\Model\Calculations;
 
-use Model\Agent\Agent;
+use Electricity\Model\Agent\Agent;
+use Electricity\Services\Model\AbstractModel;
 
-class Calculation implements CalculationInterface
+class Calculation extends AbstractModel implements CalculationInterface
 {
+    /**
+     * @var int
+     * @primery
+     * @field
+     */
+    private $id;
+    /**
+     * @var int
+     * @field
+     */
+    private $agentId;
     /**
      * @var Agent
      */
     private $agent;
+
     /**
-     * @var \Model\Tariffs\TariffInterface
+     * @var int
+     * @field
+     */
+    private $tariffId;
+    /**
+     * @return int
+     */
+    public function getTariffId()
+    {
+        return $this->tariffId;
+    }
+
+    /**
+     * @param int $tariffId
+     */
+    public function setTariffId($tariffId)
+    {
+        $this->tariffId = $tariffId;
+    }
+
+    /**
+     * @var \Electricity\Model\Tariffs\TariffInterface
      */
     private $tariff;
     /**
-     * @var float|int
+     * @var float
+     * @field
      */
     private $qty1;
     /**
-     * @var float|int
+     * @var float
+     * @field
      */
     private $qty2;
     /**
-     * @var float|int
+     * @var float
+     * @field
      */
     private $qty3;
 
     /**
-     * Calculation constructor.
-     * @param $name
-     * @param \Model\Tariffs\TariffInterface $tariff
+     * @var string
      */
-    public function __construct($name, \Model\Tariffs\TariffInterface $tariff)
+    protected $persistenceClass = "\Electricity\Model\Calculations\Persistence\CalculationPersistence";
+
+    /**
+     * Calculation constructor.
+     * @param string $name
+     * @param \Electricity\Model\Tariffs\TariffInterface $tariff
+     */
+    public function __construct($name, \Electricity\Model\Tariffs\TariffInterface $tariff)
     {
         $this->agent = new Agent($name);
         $this->agent->setName($name);
@@ -109,11 +151,60 @@ class Calculation implements CalculationInterface
         return $this->qty3 * $this->tariff->getPrice3();
     }
     /**
-     * @return \Model\Tariffs\TariffInterface
+     * @return \Electricity\Model\Tariffs\TariffInterface
      */
     public function getTariff()
     {
         return $this->tariff;
     }
+
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return int
+     */
+    public function getAgentId()
+    {
+        return $this->agentId;
+    }
+
+    /**
+     * @param int $agentId
+     */
+    public function setAgentId($agentId)
+    {
+        $this->agentId = $agentId;
+    }
+
+    /**
+     * @return Agent
+     */
+    public function getAgent()
+    {
+        return $this->agent;
+    }
+
+    /**
+     * @param Agent $agent
+     */
+    public function setAgent($agent)
+    {
+        $this->agent = $agent;
+    }
+
 
 }

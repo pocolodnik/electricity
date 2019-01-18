@@ -6,7 +6,7 @@
  * Time: 3:33
  */
 
-namespace Model\Tariffs;
+namespace Electricity\Model\Tariffs;
 
 
 class Tariff implements TariffInterface
@@ -35,14 +35,14 @@ class Tariff implements TariffInterface
      * @param $koef2
      * @param $koef3
      */
-    public function __construct($basic,$koef1,$koef2,$koef3)
-    {
-        $this->basic = $basic;
-        $this->koef1 = $koef1;
-        $this->koef2 = $koef2;
-        $this->koef3 = $koef3;
-
-    }
+//    public function __construct($basic,$koef1,$koef2,$koef3)
+//    {
+//        $this->basic = $basic;
+//        $this->koef1 = $koef1;
+//        $this->koef2 = $koef2;
+//        $this->koef3 = $koef3;
+//
+//    }
 
     /**
      * @return float|int

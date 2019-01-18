@@ -6,7 +6,7 @@
  * Time: 22:49
  */
 
-namespace Model\Agent;
+namespace Electricity\Services\Model\Agent;
 
 
 interface AgentInterface

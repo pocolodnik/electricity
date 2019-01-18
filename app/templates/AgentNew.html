@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Add new Agent{% endblock %}
+
+{% block content %}
+<form action='/agent/save' method='post'>
+    <label for="name">AgentName:</label>
+    <input type="text" name="name">
+    <br>
+    <label for="status">AgentStatus:</label>
+    <input type="text" name="status">
+    <br>
+    <br>
+    <button type="submit">Save</button>
+</form>
+{% endblock %}

@@ -9,7 +9,7 @@
 namespace Electricity\Services;
 
 
-class ControllerInterface
+interface ControllerInterface
 {
-
+    public function execute($request, $response);
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Shop\Services;
+namespace Electricity\Services;
 
 class SystemException extends \Exception
 {

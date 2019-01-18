@@ -9,7 +9,10 @@
 namespace Electricity\Model\Agent\Persistence;
 
 
-class AgentTable
+class AgentTable extends \Electricity\Services\Persistence\Resource
 {
-
+    /**
+     * @var string
+     */
+    protected $table_name = "Agents";
 }

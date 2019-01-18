@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Agents{% endblock %}
+
+{% block content %}
+<h1>Agents</h1>
+<div id="agents">
+    {% for agent in agents %}
+    <div class="agent">
+
+        <table style="width: 440px; height: 25px;">
+            <tbody>
+            <tr>
+                <td style="width: 108px;"><strong>{{agent.id}}</strong></td>
+                <td style="width: 233px;"><em>"{{agent.name}}"</em></td>
+                <td style="width: 81px;">{{agent.status}}</td>
+                <td style="width: 100px;"><form action='/agent/view/{{agent.id}}' method='get'>
+                    <button type="submit">Edit</button>
+                </form></td>
+                <td style="width: 100px;"><form action='/agent/remove/{{agent.id}}' method='get'>
+                    <button type="submit">Del</button>
+                </form></td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+    {% endfor %}
+    <div id="ButtonAdd">
+        <form action='/agent/new' method='get'>
+            <br>
+            <button type="submit">Add</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

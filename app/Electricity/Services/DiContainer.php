@@ -9,7 +9,23 @@
 namespace Electricity\Services;
 
 
-class DiContainer
+/**
+ * @return \DI\Container
+ * @throws \Exception
+ */
+class DiContainer extends Singleton
 {
+    public static function getInstance()
+    {
+        if (null === static::$instance){
+            $builder = new \DI\ContainerBuilder();
+            $builder->useAutowiring(true);
+            $builder->addDefinitions(DOCROOT . "/app/configs/global.config.php");
+            $builder->addDefinitions(DOCROOT . "/app/configs/router.config.php");
+            static::$instance = $builder->build();
 
+        }
+
+        return static::$instance;
+    }
 }

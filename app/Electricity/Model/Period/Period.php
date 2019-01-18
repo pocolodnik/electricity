@@ -6,7 +6,7 @@
  * Time: 3:14
  */
 
-namespace Model\Period;
+namespace Electricity\Model\Period;
 
 
 class Period implements PeriodInterface

@@ -6,10 +6,10 @@
  * Time: 4:35
  */
 
-namespace Model\Document;
+namespace Electricity\Model\Document;
 
 
-use Model\Period\Period;
+use Electricity\Model\Period\Period;
 
 class Document
 {
@@ -29,9 +29,9 @@ class Document
     /**
      * Document constructor.
      * @param $num
-     * @param \Model\Period\PeriodInterface $period
+     * @param \Electricity\Model\Period\PeriodInterface $period
      */
-    public function __construct($num, \Model\Period\PeriodInterface $period)
+    public function __construct($num, \Electricity\Model\Period\PeriodInterface $period)
     {
         $this->setNum($num);
         $this->setPeriod($period);
@@ -61,15 +61,15 @@ class Document
     /**
      * @param Period $period
      */
-    public function setPeriod(\Model\Period\PeriodInterface $period)
+    public function setPeriod(\Electricity\Model\Period\PeriodInterface $period)
     {
         $this->period = $period;
     }
 
     /**
-     * @param \Model\Calculations\CalculationInterface $calculation
+     * @param \Electricity\Model\Calculations\CalculationInterface $calculation
      */
-    public function addCalculation(\Model\Calculations\CalculationInterface $calculation)
+    public function addCalculation(\Electricity\Model\Calculations\CalculationInterface $calculation)
     {
         $this->calculations[] = $calculation;
 
@@ -90,7 +90,7 @@ class Document
     }
     /**
      * @param $index
-     * @return \Model\Calculations\CalculationInterface
+     * @return \Electricity\Model\Calculations\CalculationInterface
      */
     public function getCalculationByIndex($index)
     {

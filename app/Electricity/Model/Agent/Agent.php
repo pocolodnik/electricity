@@ -6,29 +6,37 @@
  * Time: 2:35
  */
 
-namespace Model\Agent;
+namespace Electricity\Model\Agent;
 
 
-use Model\Agent\Persistence\AgentTable;
+use \Electricity\Services\Model\AbstractModel;
+use \Electricity\Services\Model\Agent\AgentInterface;
 
-class Agent implements AgentInterface
+class Agent extends AbstractModel implements AgentInterface
 {
     /**
-     * @var int
+     * @primary
+     * @field
      */
-    private $id;
+    protected $id;
+    /**
+     * @var string
+     * @field
+     */
+    protected $name;
+    /**
+     * @var string
+     * @field
+     */
+    protected $status;
+//    /**
+//     * @var TariffPersistence
+//     */
+//    private $persistance = null;
     /**
      * @var string
      */
-    private $name;
-    /**
-     * @var string
-     */
-    private $status;
-    /**
-     * @var AgentTable
-     */
-    private $persistance = null;
+    protected $persistenceClass = "\Electricity\Model\Agent\Persistence\AgentTable";
 
     public function __construct($name)
     {
@@ -83,16 +91,16 @@ class Agent implements AgentInterface
         $this->status = $status;
     }
 
-    /**
-     * @return AgentTable
-     */
-    public function getPersistence()
-    {
-        if ($this->persistance === null){
-            $this->persistance = new AgentTable();
-            $this->persistance->setModel($this);
-        }
-        return $this->persistance;
-    }
+//    /**
+//     * @return TariffPersistence
+//     */
+//    public function getPersistence()
+//    {
+//        if ($this->persistance === null){
+//            $this->persistance = new TariffPersistence();
+//            $this->persistance->setModel($this);
+//        }
+//        return $this->persistance;
+//    }
 
 }

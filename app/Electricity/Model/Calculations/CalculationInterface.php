@@ -6,7 +6,7 @@
  * Time: 4:30
  */
 
-namespace Model\Calculations;
+namespace Electricity\Model\Calculations;
 
 interface CalculationInterface
 {
@@ -56,7 +56,7 @@ interface CalculationInterface
     public function getSum3();
 
     /**
-     * @return \Model\Tariffs\TariffInterface
+     * @return \Electricity\Model\Tariffs\TariffInterface
      */
     public function getTariff();
 }
