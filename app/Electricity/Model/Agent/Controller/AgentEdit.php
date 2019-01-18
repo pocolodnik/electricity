@@ -50,13 +50,16 @@ class AgentEdit implements ControllerInterface
             $this->agent->getPersistence()->load($request->id);
 
 
-            $twig = \Electricity\Services\DiContainer::getInstance()->make("Electricity\Services\TwigTemplate");
-            return $twig->render('AgentEdit.html',['agent' => $this->agent]);
+            $template = \Electricity\Services\DiContainer::getInstance()->make("Electricity\Services\TwigTemplate");
+            return $template->render('AgentEdit.html',['agent' => $this->agent]);
 
 
 //            return print_r($this->agent, true);
         } catch (NotFoundException $e) {
+
+            Logger::getLogger()->debug($e->getMessage(),$e->getTrace());
             return "Sorry, the product not found";
+
         } catch (\Electricity\Services\SystemException $e) {
 
             $this->logger->debug(

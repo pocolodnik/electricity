@@ -49,11 +49,13 @@ class AgentViewCollection implements ControllerInterface
     {
         try {
             $agents = $this->agent->getPersistence()->getCollection();
-//            $twig = TwigTemplate::getTemplate();
-            $twig = \Electricity\Services\DiContainer::getInstance()->make("Electricity\Services\TwigTemplate");
-            return $twig->render('AgentsView.html',['agents' => $agents]);
-            //return print_r($collection, true);
+            $template = \Electricity\Services\DiContainer::getInstance()->make("Electricity\Services\TwigTemplate");
+            return $template->render('AgentsView.html',['agents' => $agents]);
+
         } catch (NotFoundException $e) {
+            $this->logger->debug(
+                $e->getMessage(), $e->getTrace());
+
             return "Sorry, the product not found";
         } catch (\Electricity\Services\SystemException $e) {
 

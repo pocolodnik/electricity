@@ -53,6 +53,10 @@ class AgentDelete implements ControllerInterface
             return $response->redirect("/agent/");
 
         } catch (NotFoundException $e) {
+
+            $this->logger->debug(
+                $e->getMessage(), $e->getTrace());
+
             return "Sorry, the product not found";
         } catch (\Electricity\Services\SystemException $e) {
 

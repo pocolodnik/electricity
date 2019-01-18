@@ -49,7 +49,11 @@ class AgentView implements ControllerInterface
         try {
             $this->agent->getPersistence()->load($request->id);
             return print_r($this->agent, true);
+
         } catch (NotFoundException $e) {
+            $this->logger->debug(
+                $e->getMessage(), $e->getTrace());
+
             return "Sorry, the product not found";
         } catch (\Electricity\Services\SystemException $e) {
 

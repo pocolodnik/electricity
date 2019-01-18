@@ -51,11 +51,8 @@ class AgentOverwrite implements ControllerInterface
             $this->agent->setStatus($request->paramsPost()->status);
             $this->agent->setId($request->paramsPost()->id);
             $this->agent->getPersistence()->save();
- //           $twig = \Electricity\Services\DiContainer::getInstance()->make("Electricity\Services\TwigTemplate");
             return $response->redirect("/agent/");
 
-
-//            return print_r($this->agent, true);
         } catch (NotFoundException $e) {
             return "Sorry, the product not found";
         } catch (\Electricity\Services\SystemException $e) {

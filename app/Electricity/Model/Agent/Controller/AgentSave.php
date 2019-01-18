@@ -51,8 +51,8 @@ class AgentSave implements ControllerInterface
             $this->agent->setName($request->paramsPost()->name);
             $this->agent->setStatus($request->paramsPost()->status);
             $this->agent->getPersistence()->save();
-//            return $response->redirect("/agent/" . $this->agent->getId());
             return $response->redirect("/agent/");
+
         } catch (CantSaveException $e) {
 
             $this->logger->debug(

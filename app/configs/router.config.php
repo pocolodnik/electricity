@@ -18,11 +18,6 @@ return [
             'path' => "/migrate/",
             'className' => "\Electricity\Services\Database\MigrateController"
         ],
-//        [
-//            'method'=>'GET',
-//            'path'=> '/agent/[:id]',
-//            'className'=> 'Electricity\Model\Agent\Controller\AgentController'
-//        ],
         [
             'method'=>'GET',
             'path'=> '/agent/view/[:id]',
@@ -36,7 +31,7 @@ return [
         [
             'method'=>'GET',
             'path'=> '/agent/new',
-            'className'=> 'Electricity\Model\Agent\Controller\AgentControllerNew'
+            'className'=> 'Electricity\Model\Agent\Controller\AgentNew'
         ],
         [
             'method'=>'POST',

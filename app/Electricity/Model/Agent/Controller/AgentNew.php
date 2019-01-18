@@ -12,10 +12,10 @@ namespace Electricity\Model\Agent\Controller;
 use Electricity\Model\Agent\Agent;
 use Electricity\Services\ControllerInterface;
 
-class AgentControllerNew implements ControllerInterface
+class AgentNew implements ControllerInterface
 {
     // TODO: Implement execute() method.
-    
+
     /**
      * @var \Katzgrau\KLogger\Logger
      */
@@ -42,8 +42,8 @@ class AgentControllerNew implements ControllerInterface
     public function execute($request, $response)
     {
         try {
-            $twig = \Electricity\Services\DiContainer::getInstance()->make("Electricity\Services\TwigTemplate");
-            return $twig->render('AgentNew.html',[]);
+            $template = \Electricity\Services\DiContainer::getInstance()->make("Electricity\Services\TwigTemplate");
+            return $template->render('AgentNew.html',[]);
 
         } catch (\Electricity\Services\SystemException $e) {
 
