@@ -11,6 +11,7 @@ namespace Electricity\Model\Agent\Controller;
 
 use Electricity\Model\Agent\Agent;
 use Electricity\Services\ControllerInterface;
+use orm\Query\PdoAdapter;
 
 class AgentDelete implements ControllerInterface
 {
@@ -47,14 +48,10 @@ class AgentDelete implements ControllerInterface
     public function execute($request, $response)
     {
         try {
-            $this->agent->setName($request->paramsPost()->name);
-            $this->agent->setStatus($request->paramsPost()->status);
-            $this->agent->setId($request->paramsPost()->id);
-            $this->agent->getPersistence()->remove();
+
+            $this->agent->getPersistence()->deletei($request->id);
             return $response->redirect("/agent/");
 
-
-//            return print_r($this->agent, true);
         } catch (NotFoundException $e) {
             return "Sorry, the product not found";
         } catch (\Electricity\Services\SystemException $e) {

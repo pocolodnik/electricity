@@ -13,6 +13,7 @@ use orm\DataBase\Table;
 use orm\DataBase\Field;
 use orm\DataBase\fields\PrimaryKey;
 use orm\DataBase\fields\ForeignKey;
+use orm\Query\PdoAdapter;
 use orm\Query\QueryMemento;
 use orm\Query\QueryExecutor;
 use orm\Exceptions\QueryGenerationException;
@@ -83,6 +84,21 @@ class Resource extends Table
         }
     }
 
+    /**
+     * @param $value
+     * @throws \orm\Exceptions\QueryGenerationException
+     */
+    public function deletei($value)
+    {
+        try {
+            $pdo = PdoAdapter::getInstance()->getPdoObject();
+            $query = "DELETE FROM Agents WHERE id={$value}";
+            $statement = $pdo->prepare($query);
+            $statement->execute();
+        } catch (\PDOException $e) {
+            throw new QueryGenerationException($e->getMessage());
+        }
+    }
     /**
      * @param array $params
      * @return \Electricity\Services\Model\PersistebleEntityInterface[]
