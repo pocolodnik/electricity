@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 
-{% block title %}Add new Agent{% endblock %}
+{% block title %}Editing Agent {{agent.id}}{% endblock %}
 
 {% block content %}
-<h1>Editing the Agent {{ id }}</h1>
-<form action='/agent/save' method='post'>
+<h1>Editing Agent with Id #{{agent.id}}</h1>
+<form action='/agent/overwrite' method='post'>
     <label for="name">AgentName:</label>
     <input type="text" name="name" value="{{agent.name}}">
     <br>

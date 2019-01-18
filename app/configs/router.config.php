@@ -44,9 +44,19 @@ return [
             'className'=> 'Electricity\Model\Agent\Controller\AgentSave'
         ],
         [
-            'method'=>'POST',
+            'method'=>'GET',
             'path'=> '/agent/edit/[:id]',
             'className'=> 'Electricity\Model\Agent\Controller\AgentEdit'
+        ],
+        [
+            'method'=>'POST',
+            'path'=> '/agent/overwrite',
+            'className'=> 'Electricity\Model\Agent\Controller\AgentOverwrite'
+        ],
+        [
+            'method'=>'GET',
+            'path'=> '/agent/remove/[:id]',
+            'className'=> 'Electricity\Model\Agent\Controller\AgentDelete'
         ],
 
     ],

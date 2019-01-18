@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: alex
- * Date: 16.01.19
- * Time: 21:06
+ * Date: 18.01.19
+ * Time: 2:26
  */
 
 namespace Electricity\Model\Agent\Controller;
@@ -12,8 +12,13 @@ namespace Electricity\Model\Agent\Controller;
 use Electricity\Model\Agent\Agent;
 use Electricity\Services\ControllerInterface;
 
-class AgentControllerNew implements ControllerInterface
+class AgentDelete implements ControllerInterface
 {
+    /**
+     * @var Agent
+     */
+    private $agent;
+
     /**
      * @var \Katzgrau\KLogger\Logger
      */
@@ -25,9 +30,11 @@ class AgentControllerNew implements ControllerInterface
      * @param \Katzgrau\KLogger\Logger $logger
      */
     public function __construct(
+        Agent $agent,
         \Katzgrau\KLogger\Logger $logger
     )
     {
+        $this->agent = $agent;
         $this->logger = $logger;
     }
 
@@ -40,9 +47,16 @@ class AgentControllerNew implements ControllerInterface
     public function execute($request, $response)
     {
         try {
-            $twig = \Electricity\Services\DiContainer::getInstance()->make("Electricity\Services\TwigTemplate");
-            return $twig->render('AgentNew.html',[]);
+            $this->agent->setName($request->paramsPost()->name);
+            $this->agent->setStatus($request->paramsPost()->status);
+            $this->agent->setId($request->paramsPost()->id);
+            $this->agent->getPersistence()->remove();
+            return $response->redirect("/agent/");
 
+
+//            return print_r($this->agent, true);
+        } catch (NotFoundException $e) {
+            return "Sorry, the product not found";
         } catch (\Electricity\Services\SystemException $e) {
 
             $this->logger->debug(

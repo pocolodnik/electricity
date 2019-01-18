@@ -51,7 +51,7 @@ class AgentEdit implements ControllerInterface
 
 
             $twig = \Electricity\Services\DiContainer::getInstance()->make("Electricity\Services\TwigTemplate");
-            return $twig->render('AgentsEdit.html',['agent' => $this->agent]);
+            return $twig->render('AgentEdit.html',['agent' => $this->agent]);
 
 
 //            return print_r($this->agent, true);

@@ -39,7 +39,8 @@ class __TwigTemplate_92b2f3e324a40bb8be821cc1aaba64fa4ed9769fcdd696c0d36b96a1d50
     public function block_content($context, array $blocks = [])
     {
         // line 6
-        echo "<form action='/agent/save' method='post'>
+        echo "<h1>Creating new Agent:</h1>
+<form action='/agent/save' method='post'>
     <label for=\"name\">AgentName:</label>
     <input type=\"text\" name=\"name\">
     <br>

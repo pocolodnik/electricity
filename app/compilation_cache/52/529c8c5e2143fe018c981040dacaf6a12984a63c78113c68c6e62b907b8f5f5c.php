@@ -64,7 +64,7 @@ class __TwigTemplate_eebd243eff58b5568da414bf20a4480a5565c1b0603d52bbe6d53ddd2b9
             // line 16
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["agent"], "status", []), "html", null, true);
             echo "</td>
-                <td style=\"width: 100px;\"><form action='/agent/view/";
+                <td style=\"width: 100px;\"><form action='/agent/edit/";
             // line 17
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["agent"], "id", []), "html", null, true);
             echo "' method='get'>
